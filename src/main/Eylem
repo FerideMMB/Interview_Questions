@@ -1,0 +1,56 @@
+Eylem https://www.qafox.com/java-for-testers-interview-questions-and-answers-part-1/
+
+1- Write a simple Java program?
+
+public class Simple{
+ public static void main(String[] args){
+   System.out.println(“Hello World”);
+ }
+}
+
+2- Write a Java program to print an integer value?
+
+public class PrintInteger{
+  public static void main(String[] args){
+   int i = 1;
+System.out.println(i);
+  }
+}
+
+3- Write a Java program to print the command line arguments?
+
+public class Sample {
+ public static void main(String[] args){
+    if (args.length > 0) {
+      System.out.println("The command line"+ " arguments are:");
+      for(String val:args)
+       System.out.println(val);
+    } else
+        System.out.println("No command line "+ "arguments found.");
+ }
+}
+
+
+
+4 - Write a Java program to print the input from scanner?
+
+public class PrintScannerInput {
+ public static void main(String[] args) {
+  Scanner sc = new Scanner(System.in);
+  String name = sc.nextLine();
+  System.out.println("Name: "+name);
+ }
+}
+
+5 - Write a Java program to convert from Fahrenheit to Celsius?
+
+public class ConvertToCelsius {
+ public static void main(String[] args) {
+   Scanner scanner = new Scanner(System.in);
+   System.out.println("Input temperature in Fahrenheit: ");
+   double fahrenheit = scanner.nextDouble();
+   double celsius = (((fahrenheit - 32.0))*5 / 9.0);
+   System.out.println(fahrenheit + " degree fahrenheit is equal to " + celsius + "in celsius");
+ }
+}
+
